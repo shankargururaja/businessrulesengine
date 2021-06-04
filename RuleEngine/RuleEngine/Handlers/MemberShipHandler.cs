@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RuleEngine.Handlers
 {
-    class MemberShipHandler : BaseOrderHandler
+   public class MemberShipHandler : BaseOrderHandler
     {
         public override void Process(Request request)
         {

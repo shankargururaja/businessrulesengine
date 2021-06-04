@@ -9,7 +9,7 @@ namespace RuleEndingTest
     public class VideoOrderHandlerTest
     {
         [Fact]
-        public void VideoOrderHandlerTest_ShouldProcessBook_HappyPath()
+        public void VideoOrderHandlerTest_ShouldProcess_HappyPath()
         {
             //ARRANGE 
             var videoOrderHandler = new VideoOrderHandler();
