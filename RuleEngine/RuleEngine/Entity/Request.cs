@@ -26,7 +26,27 @@ namespace RuleEngine.Entity
         /// <summary>
         /// generate a commission payment to the agent.
         /// </summary>
-        GEN_COMMISSION_PAYMENT_FOR_AGENT
+        GEN_COMMISSION_PAYMENT_FOR_AGENT,
+        /// <summary>
+        /// generate a packing slip for shipping.
+        /// </summary>
+        GEN_PACKING_SLIP_FOR_SHIPPING,
+        /// <summary>
+        /// activate membership.
+        /// </summary>
+        ACTIVATE_MEMBERSHIP,
+        /// <summary>
+        /// apply theupgrade.
+        /// </summary>
+        UPGRADE_MEMBERSHIP,
+        /// <summary>
+        /// e-mail the owner and inform them of the activation/upgrade.
+        /// </summary>
+        EMAIL_OWNER_ABT_ACTIVATION,
+        /// <summary>
+        /// add a free “First Aid” video to the packing slip
+        /// </summary>
+        ADD_FIRST_AID_VIDEO_TO_PACKING_SLIP
 
     }
 

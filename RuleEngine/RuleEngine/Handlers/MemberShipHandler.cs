@@ -14,16 +14,15 @@ namespace RuleEngine.Handlers
                 switch (membership.MembershipType)
                 {
                     case MembershipType.New:
-                        Console.WriteLine("activate that membership.");
+                        request.Actions?.Add(Actions.ACTIVATE_MEMBERSHIP);
                         break;
                     case MembershipType.Upgrade:
-                        Console.WriteLine("apply theupgrade.");
+                        request.Actions?.Add(Actions.UPGRADE_MEMBERSHIP);
                         break;
                     default:
                         break;
                 }
-
-                Console.WriteLine("e-mail the owner and inform them of the activation/upgrade.");
+                request.Actions?.Add(Actions.EMAIL_OWNER_ABT_ACTIVATION);
             }
             if (_nextOrderHandler != null)
             {

@@ -13,7 +13,7 @@ namespace RuleEngine.Handlers
             {
                 if (order.Category == Category.Video && order.Title == "Learning to Ski")
                 {
-                    Console.WriteLine("add a free “First Aid” video to the packing slip");
+                    request.Actions?.Add(Actions.ADD_FIRST_AID_VIDEO_TO_PACKING_SLIP);
                 }
 
             }

@@ -13,8 +13,8 @@ namespace RuleEngine.Handlers
             {
                 if (order.PurchaseMode == PurchaseMode.Physical)
                 {
-                    Console.WriteLine("generate a packing slip for shipping.");
-                    Console.WriteLine("generate a commission payment to the agent.");
+                    request.Actions?.Add(Actions.GEN_PACKING_SLIP_FOR_SHIPPING);
+                    request.Actions?.Add(Actions.GEN_COMMISSION_PAYMENT_FOR_AGENT);
                 }
             }
             if (_nextOrderHandler != null) {
