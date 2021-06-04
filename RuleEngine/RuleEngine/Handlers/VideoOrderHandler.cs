@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RuleEngine.Handlers
 {
-    class VideoOrderHandler : BaseOrderHandler
+   public class VideoOrderHandler : BaseOrderHandler
     {
         public override void Process(Request request)
         {
