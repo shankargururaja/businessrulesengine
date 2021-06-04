@@ -1,8 +1,10 @@
-﻿using System;
+﻿using RuleEngine.Entity;
+using RuleEngine.Interface;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RuleEngine
+namespace RuleEngine.Handlers
 {
     public class BaseOrderHandler : IOrderHandler
     {

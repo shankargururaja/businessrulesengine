@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RuleEngine
+namespace RuleEngine.Entity
 {
     public interface IOrder
     {

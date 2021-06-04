@@ -1,8 +1,9 @@
-﻿using System;
+﻿using RuleEngine.Entity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RuleEngine
+namespace RuleEngine.Handlers
 {
    public class BookOrderHandler : BaseOrderHandler
     {

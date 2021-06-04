@@ -1,7 +1,8 @@
 using RuleEngine;
 using System;
 using Xunit;
-using System.Linq;
+using RuleEngine.Handlers;
+using RuleEngine.Entity;
 
 namespace RuleEndingTest
 {
