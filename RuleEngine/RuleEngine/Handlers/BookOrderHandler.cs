@@ -5,6 +5,9 @@ using System.Text;
 
 namespace RuleEngine.Handlers
 {
+    /// <summary>
+    /// Book order handler class
+    /// </summary>
    public class BookOrderHandler : BaseOrderHandler
     {
         public override void Process(Request request)

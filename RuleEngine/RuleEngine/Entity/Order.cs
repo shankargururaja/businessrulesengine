@@ -4,6 +4,10 @@ using System.Text;
 
 namespace RuleEngine.Entity
 {
+
+    /// <summary>
+    /// Order Interface for Items that would be ordered
+    /// </summary>
     public interface IOrder
     {
         string Title { get; }
@@ -11,6 +15,10 @@ namespace RuleEngine.Entity
         Category Category { get; }
     }
 
+
+    /// <summary>
+    /// Interface definition for Membership processing
+    /// </summary>
     public interface IMemberShip
     {
         string UserId { get; }
@@ -18,17 +26,27 @@ namespace RuleEngine.Entity
 
     }
 
+    /// <summary>
+    /// Membership type
+    /// </summary>
     public enum MembershipType
     {
         New,
         Upgrade
     }
 
+    /// <summary>
+    /// Purchase Mode
+    /// </summary>
     public enum PurchaseMode
     {
         Online,
         Physical
     }
+
+    /// <summary>
+    /// Order Category
+    /// </summary>
     public enum Category
     {
         Book,
@@ -36,6 +54,9 @@ namespace RuleEngine.Entity
 
     }
 
+    /// <summary>
+    /// Membership class
+    /// </summary>
     public class NewMemberShip : IMemberShip
     {
         public string UserId { get; }
@@ -49,6 +70,9 @@ namespace RuleEngine.Entity
         }
     }
 
+    /// <summary>
+    /// Book Class
+    /// </summary>
     public class Book : IOrder
     {
         public string Title { get; }
@@ -64,6 +88,9 @@ namespace RuleEngine.Entity
         }
     }
 
+    /// <summary>
+    /// Video class
+    /// </summary>
     public class Video : IOrder
     {
         private string _title;

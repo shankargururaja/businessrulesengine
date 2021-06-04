@@ -6,6 +6,9 @@ using System.Text;
 
 namespace RuleEngine.Handlers
 {
+    /// <summary>
+    /// Base class for Order Handler
+    /// </summary>
     public class BaseOrderHandler : IOrderHandler
     {
         protected IOrderHandler _nextOrderHandler;

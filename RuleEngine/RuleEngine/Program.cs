@@ -8,20 +8,26 @@ namespace RuleEngine
     {
         static void Main(string[] args)
         {
+
+            //Create Order Processing Handler Pipeline
             var bookOrderHandler = new BookOrderHandler();
             var memberShipHandler = new MemberShipHandler();
             var phyiscalProductHandler = new PhysicalProductHandler();
             var videoHandler = new VideoOrderHandler();
 
+            //Chain Handlers
             bookOrderHandler.SetNextHandler(memberShipHandler);
             memberShipHandler.SetNextHandler(phyiscalProductHandler);
             phyiscalProductHandler.SetNextHandler(videoHandler);
 
-            // var order = new NewMemberShip("110", MembershipType.New);
+            //Create an Order
             var order = new Book("BookName", PurchaseMode.Physical);
             var request = new Request() { Data = order };
+            
+            //Process Order
             bookOrderHandler.Process(request);
 
+            //Process Action Items
             foreach (var action in request.Actions)
             {
                 switch (action)

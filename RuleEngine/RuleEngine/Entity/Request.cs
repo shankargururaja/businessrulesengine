@@ -4,10 +4,19 @@ using System.Text;
 
 namespace RuleEngine.Entity
 {
+    /// <summary>
+    /// Request class for order processing
+    /// </summary>
     public class Request
     {
+        /// <summary>
+        /// Order Instance
+        /// </summary>
         public object Data { get; set; }
 
+        /// <summary>
+        /// List of Actions to be performed on the Order by the handlers
+        /// </summary>
         public HashSet<Actions> Actions { get;}
 
         public Request()
