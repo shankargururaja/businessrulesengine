@@ -4,39 +4,39 @@ using System.Text;
 
 namespace RuleEngine
 {
-    interface IOrder
+    public interface IOrder
     {
-        string Title { get;}
+        string Title { get; }
         PurchaseMode PurchaseMode { get; }
-        Category Category { get;}
+        Category Category { get; }
     }
 
-    interface IMemberShip
+    public interface IMemberShip
     {
         string UserId { get; }
         MembershipType MembershipType { get; }
 
     }
 
-    enum MembershipType
+    public enum MembershipType
     {
         New,
         Upgrade
     }
 
-    enum PurchaseMode
+    public enum PurchaseMode
     {
         Online,
         Physical
     }
-    enum Category
+    public enum Category
     {
         Book,
         Video,
 
     }
 
-    class NewMemberShip : IMemberShip
+    public class NewMemberShip : IMemberShip
     {
         public string UserId { get; }
 
@@ -49,7 +49,7 @@ namespace RuleEngine
         }
     }
 
-    class Book : IOrder
+    public class Book : IOrder
     {
         public string Title { get; }
 
@@ -64,7 +64,7 @@ namespace RuleEngine
         }
     }
 
-    class Video : IOrder
+    public class Video : IOrder
     {
         private string _title;
         private PurchaseMode _mode;

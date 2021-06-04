@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RuleEngine
 {
-    class BaseOrderHandler : IOrderHandler
+    public class BaseOrderHandler : IOrderHandler
     {
         protected IOrderHandler _nextOrderHandler;
 

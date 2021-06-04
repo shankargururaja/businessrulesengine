@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RuleEngine
 {
-    interface IOrderHandler
+    public interface IOrderHandler
     {
         void SetNextHandler(IOrderHandler handler);
         void Process(Request request);
